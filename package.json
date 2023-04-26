@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@metaplex-foundation/mpl-bubblegum": "^0.6.2",
+    "@raydium-io/raydium-sdk": "^1.3.0-beta.15",
+    "@solana/spl-token": "^0.3.7",
+    "dotenv": "^16.0.3"
+  },
+  "name": "cnfts",
+  "version": "1.0.0",
+  "description": "Minting and sending cNFTs using Helius.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "merkle": "ts-node ./src/merkle.ts",
+    "collection": "ts-node ./src/collection.ts",
+    "mint": "ts-node ./src/mint.ts"
+  },
+  "author": "",
+  "license": "ISC"
+}
