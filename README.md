@@ -5,12 +5,12 @@
       * `KEYPAIR_SRC` - Fill in wallet .json name for keypair created with Solana CLI. This will fund all transactions in this demo.
       * `HELIUS_RPC_URL` - RPC with API key you can get from https://dev.helius.xyz/dashboard/app    
       * `SOLANA_RPC` - This could be the same but is typically "https://api.devnet.solana.com" for devnet tests.
-      * COLLECTION_MINT_WALLET - Fill in wallet .json name for collection mint wallet created with Solana CLI.
-      * COLLECTION_MINT - Paste in the name of the COLLECTION_MINT_WALLET without the .json at the end, this represents the address.
-      * MERKLE_TREE_SRC - Fill in wallet .json name for merkle created with Solana CLI.
-      * COLLECTION_METADATA - Collection mint uri (typically from arweave or shadow.storage)      
-      * NFT_METADATA - NFT mint uri (typically from arweave or shadow.storage). Make this one good. There will be a lot ;). (This upload can ofc be customized to allow different images, for sake of keeping the basic concepts, this will be one image type).
-      * COLLECTION_SIZE - Number of NFTs you want minted. This will also be the number minted to your wallet key in this demo. 
+      * `COLLECTION_MINT_WALLET` - Fill in wallet .json name for collection mint wallet created with Solana CLI.
+      * `COLLECTION_MINT` - Paste in the name of the COLLECTION_MINT_WALLET without the .json at the end, this represents the address.
+      * `MERKLE_TREE_SRC` - Fill in wallet .json name for merkle created with Solana CLI.
+      * `COLLECTION_METADATA` - Collection mint uri (typically from arweave or shadow.storage)      
+      * `NFT_METADATA` - NFT mint uri (typically from arweave or shadow.storage). Make this one good. There will be a lot ;). (This upload can ofc be customized to allow different images, for sake of keeping the basic concepts, this will be one image type).
+      * `COLLECTION_SIZE` - Number of NFTs you want minted. This will also be the number minted to your wallet key in this demo. 
       
    
 # Step 1 - Create Merkle
