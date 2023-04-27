@@ -35,6 +35,21 @@
     * Symbol
     * Uri
  * Run `npm run collection` to get this initial collection Mint created. 
+ * You should see a token generated that matches the wallet key you set for the collection in `.env`. Please search this using the explorer. 
+
+# Step 2 - Mint NFTs
+ We are almost at the fun part of being able to see them in wallet! Now we just need to mint the NFTs we set in the previous step. 
+ A few things to note of this repo: 
+   * The current repo is set to mint ALL NFTs from the collection into your wallet assigned in as the `KEYPAIR_SRC`. You can change this set up as needed, but will require a bit of customization. 
+   * We are planning to add a transfer function here to move NFTs out of wallet. Please keep an eye out for an update on this _soon_.
+   * Once you have your value set here, make sure you have SOL in the devnet environment wallet, and you are ready to mint! 
+   * Run `npm run mint` to start the minting process. 
+      * From this, you will see the transactions start to populate in your terminal, copy/paste one of the values to ensure these are a success. 
+      * Check in SolFlare wallet to make sure the cNFTs were properly minted, you should start to see them properly populate. 
+
+Now you have minted your first cNFTs! 
+
+
 
 # Commands:
 * `npm run merkle` - creates merkle proof with wallet you've set. 
