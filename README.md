@@ -1,5 +1,5 @@
 # compression-nfts
-   *this is a devnet look into minting compressed nfts and setting up the merkle tree to do it.
+   _This is a devnet look into minting compressed nfts and setting up the merkle tree to do it._
 # Setting up project
    * In the `.env` file insert the following variables:
       * `KEYPAIR_SRC` - Fill in wallet .json name for keypair created with Solana CLI. This will fund all transactions in this demo.
