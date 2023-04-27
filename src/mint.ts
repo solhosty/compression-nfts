@@ -10,7 +10,7 @@ async function createMerkle() {
     const keypair = loadWallet(env.KEYPAIR_SRC)
     const connection = new Connection(env.HELIUS_RPC)
     const merkleTree = loadWallet(env.MERKLE_TREE_SRC);
-    const numberOfTransactions = Number(env.NUMBER_OF_TRANSACTIONS);
+    const numberOfTransactions = Number(env.COLLECTION_SIZE);
     const [treeAuthority, _bump] = PublicKey.findProgramAddressSync(
         [merkleTree.publicKey.toBuffer()],
         BUBBLEGUM_PROGRAM_ID,

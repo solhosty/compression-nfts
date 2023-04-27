@@ -96,7 +96,7 @@ export const initCollection = async (
         collectionMint: collectionMint,
       },
       {
-        setCollectionSizeArgs: { size: env.NUMBER_OF_TRANSACTIONS },
+        setCollectionSizeArgs: { size: env.COLLECTION_SIZE },
       },
       TOKEN_METADATA_PROGRAM_ID
     );
