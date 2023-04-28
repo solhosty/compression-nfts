@@ -1,7 +1,6 @@
 import axios from "axios";
-import { env } from "../../env-config";
 
-const HELIUS_RPC = env.HELIUS_RPC;
+const HELIUS_RPC = "https://rpc-devnet.helius.xyz/?api-key=8bb81828-2b6b-422e-8272-8ac173443412";
 
 export async function getAsset(assetId: any, rpcUrl = HELIUS_RPC): Promise<any> {
     try {

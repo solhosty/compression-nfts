@@ -11,6 +11,7 @@ export const env = {
   KEYPAIR_SRC: process.env.KEYPAIR_SRC || 'undefined',
   COLLECTION_MINT_WALLET: process.env.COLLECTION_MINT_WALLET || 'undefined',
   COLLECTION_SIZE: parseInt(process.env.COLLECTION_SIZE || '0', 10),
-
+  ASSET_ID: process.env.ASSET_ID || 'undefined',
+  INDEX_NFT: parseInt(process.env.INDEX_NFT || '0', 10),
   // add other environment variables you need here
 };

@@ -1,4 +1,4 @@
-import { createCreateTreeInstruction, PROGRAM_ID as BUBBLEGUM_PROGRAM_ID, createMintV1Instruction, createMintToCollectionV1Instruction } from "@metaplex-foundation/mpl-bubblegum"
+import { createCreateTreeInstruction, PROGRAM_ID as BUBBLEGUM_PROGRAM_ID  } from "@metaplex-foundation/mpl-bubblegum"
 import { env } from "../env-config";
 import { Connection, PublicKey, SystemProgram} from "@solana/web3.js";
 import { loadWallet, sendVersionedTx } from "./utils/util";
@@ -19,14 +19,14 @@ async function createMerkle() {
         
     }
     const space = getConcurrentMerkleTreeAccountSize(depthSizePair.maxDepth, depthSizePair.maxBufferSize)
-    const createAccountIx = await SystemProgram.createAccount({ 
+    const createAccountIx = SystemProgram.createAccount({
         newAccountPubkey: merkleTree.publicKey,
         fromPubkey: keypair.publicKey,
-        space: space, 
+        space: space,
         lamports: await connection.getMinimumBalanceForRentExemption(space),
         programId: SPL_ACCOUNT_COMPRESSION_PROGRAM_ID,
     })
-    const ix = await createCreateTreeInstruction({ 
+    const ix = createCreateTreeInstruction({
         compressionProgram: SPL_ACCOUNT_COMPRESSION_PROGRAM_ID,
         logWrapper: SPL_NOOP_PROGRAM_ID,
         treeCreator: keypair.publicKey,
