@@ -8,6 +8,8 @@ Compressed NFTs differ from regular NFTs in that they don’t have the token inf
 
 This will often lessen the cost of a compression NFT compared to a real NFT, where the average cost to mint on-chain is .00005 SOL, compared to .01 SOL for a token account storage rent.
 
+This means you can mint a 15k collection for around .66 SOL in total, versus 10+ SOL for a 15k collection. 
+
 This is typically accomplished in a few steps: 
 1. Setting up the Merkle tree.
 2. Setting up the collection.
