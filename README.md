@@ -4,13 +4,15 @@
 
    _This is a devnet look into minting compressed nfts and setting up the merkle tree to do it. This will use Helius methods to call necessary information to interact with the compressed NFTs._ 
 
-Compressed NFTs differ from regular NFTs in that they don’t have the token information stored on-chain, and 
+Compressed NFTs differ from regular NFTs in that they don’t have the token information stored on-chain, and instead have metadata stored on a merkle tree to reduce on-chain storage requirements. 
+
+This will often lessen the cost of a compression NFT compared to a real NFT, where the average cost to mint on-chain is .00005 SOL, compared to .01 SOL for a token account storage rent.
 
 This is typically accomplished in a few steps: 
-Setting up the Merkle tree.
-Setting up the collection.
-Minting the compressed NFTs.
-Transferring to another wallet. 
+1. Setting up the Merkle tree.
+2. Setting up the collection.
+3. Minting the compressed NFTs.
+4. Transferring to another wallet. 
 
 # Setting up the project `.env`
 
