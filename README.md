@@ -1,3 +1,5 @@
+# READ ME WORK IN PROGRESS 5/2/23
+
 # compression-nfts
 
    _This is a devnet look into minting compressed nfts and setting up the merkle tree to do it. This will use Helius methods to call necessary information to interact with the compressed NFTs._ 
