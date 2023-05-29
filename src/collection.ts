@@ -27,6 +27,7 @@ export const initCollection = async (
 ) => {
   const cmintKey = loadWallet(env.COLLECTION_MINT_WALLET);
   // const collectionMint = cmintKey.publicKey;
+  const keypair = loadWallet(env.KEYPAIR_SRC);
   const collectionMint = await createMint(
     connection,
     payer,
@@ -80,7 +81,9 @@ export const initCollection = async (
           symbol: "HCNFT",
           uri: env.COLLECTION_METADATA,
           sellerFeeBasisPoints: 0,
-          creators: null,
+          creators: [
+            { address: keypair.publicKey, verified: true, share: 100 },
+          ],
           collection: null,
           uses: null,
         },

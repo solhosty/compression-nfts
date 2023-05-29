@@ -32,7 +32,7 @@ async function transfer() {
       leafOwner: keypair.publicKey,
       leafDelegate: keypair.publicKey,
       newLeafOwner: new PublicKey(
-        "DkABWpUinhmtP2fw8ViBf5UZKjj9ACF49BLaSqfoYSbt"
+        "MiCQoU7dk3ddXTNPjFfFwC3YuXNDfZuuqDwd19Cmgpg"
       ),
       merkleTree: merkleTree.publicKey,
       logWrapper: SPL_NOOP_PROGRAM_ID,

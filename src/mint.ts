@@ -63,7 +63,7 @@ async function createMerkle() {
     {
       metadataArgs: {
         collection: { key: collectionMint, verified: false },
-        creators: [],
+        creators: [{ address: keypair.publicKey, verified: true, share: 100 }],
         isMutable: true,
         name: "Helius Test CNFTs",
         primarySaleHappened: true,

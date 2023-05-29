@@ -6,6 +6,7 @@ import {
   TransactionMessage,
   VersionedTransaction,
   PublicKey,
+  AccountMeta
 } from "@solana/web3.js";
 
 export function loadWallet(kFile: string): Keypair {
@@ -14,7 +15,6 @@ export function loadWallet(kFile: string): Keypair {
     new Uint8Array(JSON.parse(fs.readFileSync(kFile).toString()))
   );
 }
-
 export async function sendVersionedTx(
   connection: Connection,
   instructions: TransactionInstruction[],
@@ -32,3 +32,14 @@ export async function sendVersionedTx(
   const signature = await connection.sendTransaction(transaction);
   return signature;
 }
+
+export const mapProof = (assetProof: { proof: string[] }): AccountMeta[] => {
+  if (!assetProof.proof || assetProof.proof.length === 0) {
+    throw new Error("Proof is empty");
+  }
+  return assetProof.proof.map((node) => ({
+    pubkey: new PublicKey(node),
+    isSigner: true,
+    isWritable: true,
+  }));
+};

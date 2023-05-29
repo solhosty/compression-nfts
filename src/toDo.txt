@@ -1,0 +1,15 @@
+
+  NEEDED INSTRUCTIONS
+   - VerifyCreator //on this page 
+   https://explorer.solana.com/tx/5EDVjLZzWSGmsyZfVsVMd14N4Xc9YzgTP4mBcfaxKhLwjvEdn8hrVq4jD3n7MEkjAbhfV9WwDYu9yLXpTecZGzj7?cluster=devnet
+    - UnverifyCreator // on this page
+    https://explorer.solana.com/tx/3DfnW8KySEKVpNyrW3Lcb8vrsQGAkn68XjGb2CW8EsmgVcqTPbi3LU3FFDY3z5b4UMeNdJEV5u2myuJei1Czk5fm?cluster=devnet
+    - VerifyCollection 
+   SendTransactionError: failed to send transaction: encoded solana_sdk::transaction::versioned::VersionedTransaction too large: 1684 bytes (max: encoded/raw 1644/1232)
+    - UnverifyCollection 
+    SendTransactionError: failed to send transaction: encoded solana_sdk::transaction::versioned::VersionedTransaction too large: 1684 bytes (max: encoded/raw 1644/1232)
+    - SetAndVerifyCollection 
+    SendTransactionError: failed to send transaction: encoded solana_sdk::transaction::versioned::VersionedTransaction too large: 1684 bytes (max: encoded/raw 1644/1232)
+    - DecompressV1 
+     SendTransactionError: failed to send transaction: encoded solana_sdk::transaction::versioned::VersionedTransaction too large: 2416 bytes (max: encoded/raw 1644/1232)
+    

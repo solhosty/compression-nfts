@@ -17,7 +17,10 @@
     "collection": "ts-node ./src/collection.ts",
     "mint": "ts-node ./src/mint.ts",
     "transfer": "ts-node ./src/transfer.ts",
-    "id": "ts-node ./src/utils/treeid.ts"
+    "id": "ts-node ./src/utils/treeid.ts",
+    "verify": "ts-node ./src/verify.ts",
+    "unverify": "ts-node ./src/collect.ts",
+    "decompress": "ts-node ./src/decompress.ts"
   },
   "author": "",
   "license": "ISC"
